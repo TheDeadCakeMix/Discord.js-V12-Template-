@@ -39,5 +39,5 @@ client.on("message", async message => {
 
 
 
-//make a secret called "bottoken" and past your bot token in it
-client.login(process.env.bottoken)
+//make a secret called "token" and past your bot token in it
+client.login(process.env.token)

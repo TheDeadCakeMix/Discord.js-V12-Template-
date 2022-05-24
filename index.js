@@ -16,7 +16,7 @@ const prefix = "-" //prefix for the bot
 
 
 client.on('ready', () => {
- console.log(`Logged in as ${client.user.tag}`)
+  console.log(`Logged in as ${client.user.tag}`)
 })
 
 
@@ -29,8 +29,8 @@ client.on('ready', () => {
 client.on("message", async message => {
 
 
-//ping
-  if (message.content.toLowerCase().startsWith(prefix + "ping")){
+  //ping
+  if (message.content.toLowerCase().startsWith(prefix + "ping")) {
     message.channel.send("Pong")
   }
 

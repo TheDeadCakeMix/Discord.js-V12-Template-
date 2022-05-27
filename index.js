@@ -1,4 +1,6 @@
 //Discord.js v12 template by DeadCakeMix#7252
+
+.//express for keeping the bot online
 const app = require("express")()
 
 app.get(`/`, (req, res) => {
@@ -7,8 +9,6 @@ app.get(`/`, (req, res) => {
 
 app.listen(3000, () => {
 })
-const Database = require("@replit/database");
-const db = new Database()
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "-" //prefix for the bot 
@@ -29,7 +29,7 @@ client.on('ready', () => {
 client.on("message", async message => {
 
 
-  //ping
+  //ping command
   if (message.content.toLowerCase().startsWith(prefix + "ping")) {
     message.channel.send("Pong")
   }
